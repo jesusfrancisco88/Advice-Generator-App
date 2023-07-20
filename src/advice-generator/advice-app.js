@@ -2,11 +2,15 @@
  * @returns {Object} quote info 
  */
 const fetchQuote = async () => {
-  const res = await fetch('https://api.adviceslip.com/advice');
+  const timesTamp = new Date().getTime();
+  const url = `https://api.adviceslip.com/advice?time=${timesTamp}`;
+
+
+  const res = await fetch(url);
   const data = await res.json();
 
   // console.log(data);
-  // console.log(data.slip);
+  console.log(data.slip);
   return data.slip;
 }
 
