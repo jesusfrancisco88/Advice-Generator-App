@@ -12,7 +12,7 @@ document.querySelector('#app').innerHTML = `
     <div class="card"> </div>
 
   </div>
-`
+`;
 
 const element = document.querySelector('.card');
 adviceGen(element);
