@@ -1,5 +1,5 @@
 /**
- * @returns {Object} quote information 
+ * @returns {Object} quote info 
  */
 const fetchQuote = async () => {
   const res = await fetch('https://api.adviceslip.com/advice');
@@ -13,7 +13,6 @@ const fetchQuote = async () => {
 
 export const adviceGen =  async ( element ) => {
   element.innerHTML = '<span class="loading-message">Loading...</span>';
-  
 
   //* HTML/CSS Elements
   const advice = document.createElement('blockquote');
@@ -32,6 +31,7 @@ export const adviceGen =  async ( element ) => {
     adviceNumber.innerHTML = `Advice #${data.id}`;
     advice.innerHTML = `"${data.advice}"`;
     element.replaceChildren(adviceNumber, advice, nextAdvice);
+    // Método que se utiliza para reemplazar todos los hijos de un elemento HTML por un nuevo conjunto de elementos. 
   }
 
   //* Button Functionality

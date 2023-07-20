@@ -65,7 +65,7 @@ h1 {
   padding: 2rem;
   text-align: center;
 
-  background-color: hsla(219, 19%, 24%, 0.929);
+  background-color: hsla(219, 19%, 24%, 0.85);
   box-shadow: 9px 6px 26px 2px rgba(0,0,0,0.5);
   width: 40%;
   border-radius: 2rem;
@@ -74,6 +74,8 @@ h1 {
 /** CONTENT  **/
 .loading-message {
   color: hsl(193, 38%, 86%);
+  font-size: 2rem;
+  letter-spacing: 4px;
 }
 
 .adviceNumber {
@@ -131,7 +133,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    /* color: #213547; */
     background-color: #ffffff;
   }
   a:hover {
